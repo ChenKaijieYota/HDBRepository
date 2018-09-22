@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.tabs.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.login_info').Tabs({
+		event:'click'
+	});	
+});	
+</script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<div class="login">
+		<div class="main">
+			<div class="top">
+				<a href="index.html" class="back">返回首页</a>
+				<a href="register.html" class="go">注册</a>
+			</div>
+			<div class="middle">
+				<img src="images/icon.png" class="icon">
+				<div class="sweep">
+					<img src="images/QR_code.png" class="QR_code">
+					<span>扫码登录</span>
+				</div>
+				<div class="login_info">
+					<ul class="tab_menu">
+				        <li class="current">账号密码登录</li>
+				        <li>手机动态码登录</li>
+			        </ul>
+			        <div class="tab_box">
+			        	<div>
+			        		<input type="text" placeholder="手机号/账号名/邮箱" class="input_text"><br>
+			        		<input type="password" placeholder="密码" class="input_text"><br>
+			        	</div>
+			        	<div class="hide">
+			        		<input type="text" placeholder="手机号" class="input_text"><br>
+			        		<input type="password" placeholder="密码" class="input_text"><br>
+			        		<div class="code">获取动态码</div>
+			        	</div>
+			        </div>
+			        <input type="checkbox" class="checkbox1">
+			        <span class="self">下次自动登录</span><span class="forget"><a href="">忘记密码</a></span><br>
+			        <button class="input_button">登录</button>
+				</div>
+
+				<ul class="login_third_party">
+					<li><img src="images/QQ.png" class="login_icon"><span class="login_icon_name">QQ登录</span></li>
+					<li><img src="images/wechat.png" class="login_icon"><span class="login_icon_name">微信登录</span></li>
+					<li><img src="images/microblog.png" class="login_icon"><sapn class="login_icon_name">微博登录</sapn></li>
+				</ul>
+			</div>
+			<div class="base">
+			    <a href="">帮助</a>
+				<a href="">联系客服</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
