@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#headpage").load("head.html");  
+});
+</script>
+</head>
+<body>
+	<div id="headpage"></div>
+	<div class="menu">
+        <div class="center">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">寒假工</a></li>
+                <li><a href="" style="color: #fff">工作招聘</a></li>
+                <li><a href="">兼职</a></li>
+                <li><a href="">房产租售</a></li>
+                <li><a href="">汽车租售</a></li>
+                <li><a href="">手物品交易</a></li>
+                <li><a href="">同城商家</a></i>
+            </ul>
+        </div>
+    </div>
+    <div class="car_rental">
+    	<div class="top_nav"><a href="">汽车租售</a> > 列表</div>
+    	<div class="main">
+    		<div class="choice">
+    			<dl>
+    				<dt>类别：</dt>
+    				<dd>
+    					<a href="" class="li_first">全部</a>
+    					<a href="">面包车</a>
+    					<a href="">商务车</a>
+    					<a href="">豪华轿车</a>
+    					<a href="">新能源车</a>
+    					<a href="">普通轿车</a>
+    					<a href="">跑车</a>
+    					<a href="">出租车</a>
+    				</dd>
+    				<dt>区域：</dt>
+    				<dd>
+    				    <a href="" class="li_first">全部</a>
+    					<a href="">茂南区</a>
+    					<a href="">电白区</a>
+    					<a href="">高州区</a>
+    				</dd>
+    				<dt>车系：</dt>
+    				<dd>
+    					<a href="" class="li_first">全部</a>
+    					<a href="">雅达</a>
+    					<a href="">雅阁</a>
+    					<a href="">马自达6</a>
+    					<a href="">卡罗拉</a>
+    				</dd>
+    				<dt>更多：</dt>
+    				<dd>
+    					<div class="select select_1">
+    						<p>车龄</p>
+    						<ul>
+    							<li class="option">1年</li>
+    							<li class="option">1.5年</li>
+    							<li class="option">2年</li>
+    						</ul>
+    					</div>
+    					<div class="select select_2">
+    						<p>排量</p>
+    						<ul>
+    							<li class="option">1</li>
+    							<li class="option">1.5</li>
+    							<li class="option">2</li>
+    						</ul>
+    					</div>
+    					<div class="select select_3">
+    						<p>里程</p>
+    						<ul>
+    							<li class="option">1</li>
+    							<li class="option">1.5</li>
+    							<li class="option">2</li>
+    						</ul>
+    					</div>
+    					<div class="select select_4">
+    						<p>变速箱</p>
+    						<ul>
+    							<li class="option">手动</li>
+    							<li class="option">自动</li>
+    							<li class="option">手自一体</li>
+    						</ul>
+    					</div>
+    					<div class="select select_5">
+    						<p>颜色</p>
+    						<ul>
+    							<li class="option">红色</li>
+    							<li class="option">黑色</li>
+    							<li class="option">银白色</li>
+    						</ul>
+    					</div>
+    				</dd>
+    			</dl>
+    		</div>
+    		<div class="rental_list" id="pageMain">
+    			<div class="list_nav">
+    				<p class="list_name">租售列表</p>
+    				<p class="list_free">免费发布信息</p>
+    			</div>
+    			<ul class="rental_info" id="pageMain">
+    				<li class="list" id="car"><a href="">
+    					<div class="car_img"><img src="images/car_one.jpg"></div>
+    					<div class="car_detail">
+    						<dl class="car_name">
+    							<dt>名称</dt>
+    							<dt>型号</dt>
+    						</dl>
+    						<dl class="car_info">
+    							<dt>年份</dt>
+    							<dt>里程</dt>
+    							<dt>排量</dt>
+    							<dt>自动/手动</dt>
+    						</dl>
+    						<dl class="type">
+    							<dt>租车/售车</dt>
+    							<dt>联系车主</dt>
+    						</dl>
+    					</div>
+    					<p class="car_cost">价格</p></a>
+    				</li>
+    				<li class="list" id="car"><a href="">
+                        <div class="car_img"><img src="images/car_two.jpg"></div>
+                        <div class="car_detail">
+                            <dl class="car_name">
+                                <dt>名称</dt>
+                                <dt>型号</dt>
+                            </dl>
+                            <dl class="car_info">
+                                <dt>年份</dt>
+                                <dt>里程</dt>
+                                <dt>排量</dt>
+                                <dt>自动/手动</dt>
+                            </dl>
+                            <dl class="type">
+                                <dt>租车/售车</dt>
+                                <dt>联系车主</dt>
+                            </dl>
+                        </div>
+                        <p class="car_cost">价格</p></a>
+                    </li>
+                    <li class="list" id="car"><a href="">
+                        <div class="car_img"><img src="images/car_two.jpg"></div>
+                        <div class="car_detail">
+                            <dl class="car_name">
+                                <dt>名称</dt>
+                                <dt>型号</dt>
+                            </dl>
+                            <dl class="car_info">
+                                <dt>年份</dt>
+                                <dt>里程</dt>
+                                <dt>排量</dt>
+                                <dt>自动/手动</dt>
+                            </dl>
+                            <dl class="type">
+                                <dt>租车/售车</dt>
+                                <dt>联系车主</dt>
+                            </dl>
+                        </div>
+                        <p class="car_cost">价格</p></a>
+                    </li>
+                    <li class="list" id="car"><a href="">
+                        <div class="car_img"><img src="images/car_one.jpg"></div>
+                        <div class="car_detail">
+                            <dl class="car_name">
+                                <dt>名称</dt>
+                                <dt>型号</dt>
+                            </dl>
+                            <dl class="car_info">
+                                <dt>年份</dt>
+                                <dt>里程</dt>
+                                <dt>排量</dt>
+                                <dt>自动/手动</dt>
+                            </dl>
+                            <dl class="type">
+                                <dt>租车/售车</dt>
+                                <dt>联系车主</dt>
+                            </dl>
+                        </div>
+                        <p class="car_cost">价格</p></a>
+                    </li>
+                    <li class="list" id="car"><a href="">
+                        <div class="car_img"><img src="images/car_one.jpg"></div>
+                        <div class="car_detail">
+                            <dl class="car_name">
+                                <dt>名称</dt>
+                                <dt>型号</dt>
+                            </dl>
+                            <dl class="car_info">
+                                <dt>年份</dt>
+                                <dt>里程</dt>
+                                <dt>排量</dt>
+                                <dt>自动/手动</dt>
+                            </dl>
+                            <dl class="type">
+                                <dt>租车/售车</dt>
+                                <dt>联系车主</dt>
+                            </dl>
+                        </div>
+                        <p class="car_cost">价格</p></a>
+                    </li>
+    			</ul>
+    		</div>
+    		<div id="pageBox" class="pageBox">
+                <span id="prev">上一页</span>
+                <ul id="pageNav"></ul>
+                <span id="next">下一页</span>
+            </div>
+    	</div>
+    	<div class="side_bar">
+    		<div class="glance">
+    			<div class="topic">其他人还在看</div>
+                <a href="">
+    			    <div class="car_photo"><img src="images/car_one.jpg" class="car"></div>
+                    <ul>
+                	    <li>汽车名称</li>
+                	    <li>型号</li>
+                    </ul>
+                    <div class="info_intro">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                </a>
+    		</div>
+    		<div class="glance">
+    			<div class="topic"></div>
+                <a href="">
+    			    <div class="car_photo"><img src="images/car_one.jpg" class="car"></div>
+                    <ul>
+                	    <li>汽车名称</li>
+                	    <li>型号</li>
+                    </ul>
+                    <div class="info_intro">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                </a>
+    		</div>
+    		<div class="glance">
+    			<div class="topic"></div>
+    			<a href="">
+                    <div class="car_photo"><img src="images/car_one.jpg" class="car"></div>
+                    <ul>
+                        <li>汽车名称</li>
+                        <li>型号</li>
+                    </ul>
+                    <div class="info_intro">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                </a>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

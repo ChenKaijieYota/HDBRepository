@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#headpage").load("head.html");
+    $('li').hover(function(){
+        var src = $(this).find('img').attr('src');
+        $('.picture').attr('src', src);                                           
+    });  
+});
+</script>
+</head>
+<body>
+	<div id="headpage"></div>
+	<div class="menu">
+        <div class="center">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">寒假工</a></li>
+                <li><a href="" style="color: #fff">工作招聘</a></li>
+                <li><a href="">兼职</a></li>
+                <li><a href="">房产租售</a></li>
+                <li><a href="">汽车租售</a></li>
+                <li><a href="">手物品交易</a></li>
+                <li><a href="">同城商家</a></i>
+            </ul>
+        </div>
+    </div>
+    <div class="car_rental_detail">
+    	<div class="top_nav"><a href="">汽车租售</a> > <a href="car_rental.html">租赁列表</a> > 车辆详情</div>
+    	<div class="main">
+    		<div class="car_content">
+    			<div class="nav">
+    				<span>车辆品牌</span><span>型号</span>
+    			</div>
+    			<div class="car_picture">
+    				<div class="large_picture">
+    				    <img src="images/car_one.jpg" class="picture">
+    				</div>
+    				<div class="small_picture">
+    					<ul>
+    						<li><img src="images/car_one.jpg"></li>
+    						<li><img src="images/car_two.jpg"></li>
+    						<li><img src="images/bg_1.jpg"></li>
+    						<li><img src="images/bg_3.jpg"></li>
+    					</ul>
+    				</div>
+    			</div>
+    			<div class="info">
+    				<span class="price">价格</span>
+    				<div class="report">
+    					<a href="">查看估值报告 ></a>
+    					<a href="">查看新车报价 ></a>
+    				</div>
+    				<div class="use_info">
+    					<div class="use_content">
+    						<div class="use_box">
+    							<span>X.XX万公里</span><br>
+    						    <span>表显里程</span>
+    						</div>
+    					</div>
+    					<div class="use_content">
+    						<div class="use_box">
+    							<span>20XX年XX月</span><br>
+    						    <span>首次上牌</span>
+    						</div>
+    					</div>
+    					<div class="use_content">
+    						<div class="use_box">
+    							<span>X.XL/自动</span><br>
+    						    <span>排量/变速箱</span>
+    						</div>
+    					</div>
+    					<div class="use_content">
+    						<div class="use_box">
+    							<span>XX</span><br>
+    						    <span>排量标准</span>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="phone"><a href="">联系车主</a></div>
+    				<div class="owner">车&nbsp;主：X先生/X小姐</div>
+    			</div>
+    		</div>
+    		<div class="car_message">
+    			<div class="list_nav">
+    				<p class="list_name">车辆信息</p>
+    			</div>
+    			<div class="basic_info">
+    			    <p>基本信息</p>
+    				<ul>
+    					<li>&nbsp;上牌时间&nbsp;&nbsp;XXX</li>
+    					<li>&nbsp;变速箱&nbsp;&nbsp;XXX</li>
+    					<li>&nbsp;表显里程&nbsp;&nbsp;XXX</li>
+    					<li>排量标准&nbsp;&nbsp;XXX</li>
+    					<li>&nbsp;本车排量&nbsp;&nbsp;XXX</li>
+    					<li>车辆质量&nbsp;&nbsp;XXX</li>
+    				</ul>
+    			</div>
+    			<div class="config_info">
+    				<p>配置信息</p>
+    				<ul>
+    					<li>&nbsp;档位个数&nbsp;&nbsp;XXX</li>
+    					<li>综合油耗&nbsp;&nbsp;XXX</li>
+    					<li>&nbsp;驱动方式&nbsp;&nbsp;XXX</li>
+    					<li>车身结构&nbsp;&nbsp;XXX</li>
+    					<li>发动机缸数&nbsp;&nbsp;XXX</li>
+    					<li>最大功率&nbsp;&nbsp;XXX</li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_bar">
+    			<div class="topic">猜你喜欢</div>
+    			<a href="">
+    			    <div class="car_photo"><img src="images/car_one.jpg"></div>
+    			    <div class="price">价格</div>
+    			    <ul>
+                	    <li>汽车名称</li>
+                	    <li>型号</li>
+                    </ul>
+                    <div class="info_intro">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</div>
+                </a>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>
