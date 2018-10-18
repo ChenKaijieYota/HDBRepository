@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.tabs.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#headpage").load("head.html");
+	$('.content').Tabs({
+		event:'click'
+	});  
+});
+</script>
+</head>
+<body>
+	<div id="headpage"></div>
+	<div class="menu">
+        <div class="center">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">寒假工</a></li>
+                <li><a href="" style="color: #fff">工作招聘</a></li>
+                <li><a href="">兼职</a></li>
+                <li><a href="">房产租售</a></li>
+                <li><a href="">汽车租售</a></li>
+                <li><a href="">手物品交易</a></li>
+                <li><a href="">同城商家</a></i>
+            </ul>
+        </div>
+    </div>
+    <div class="hitch_ride">
+    	<div class="top_nav"><a href="">汽车租售</a> > 顺风车</div>
+    	<div class="main">
+    		<div class="choice">
+    			<dl>
+    				<dt>出发地点：</dt>
+    				<dd>
+						<input type="text" class="input_text">
+                        <input type="text" class="input_text">
+						<input type="text" class="station" placeholder="公交站/地点站/地标">
+			            <input type="submit" class="search_submit" value="搜索">
+    				</dd>
+    				<dt>到达地点：</dt>
+    				<dd>
+						<input type="text" class="input_text">
+						<input type="text" class="input_text">
+						<input type="text" class="station" placeholder="公交站/地点站/地标">
+    				</dd>
+    				<dt>出发日期：</dt>
+    				<dd>
+    					<a href="">全部</a>
+    					<a href="">今天</a>
+    					<a href="">明天</a>
+    					<a href="">后天</a>
+    					<input type="text" class="time" placeholder="选择其他时间">
+    				</dd>
+    				<dt>选择类型：</dt>
+    				<dd>
+    					<a href="">全部</a>
+                        <a href="">同城</a>
+                        <a href="">跨城</a>
+    				</dd>
+    			</dl>
+			</div>
+			<div class="content">
+				<ul class="tab_menu list_nav">
+    				<li class="current">找车主</li>
+    				<li>找乘客</li>
+    			</ul>
+				<div class="tab_box">
+					<div>
+						<ul id="pageMain">
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+						<ul id="pageBox" class="pageBox">
+							<span id="prev">上一页</span>
+							<ul id="pageNav"></ul>
+							<span id="next">下一页</span>
+						</ul>
+					</div>
+					<div class="hide">
+						<ul id="pageMain_1">
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</div>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+							<li class="list" id="car"><a href="">
+								<div class="tab_path">
+									<div class="tab_way">
+										<span>茂名茂南区官渡二路</span>
+										<img src="images/path_arrow.png">
+										<span>广州天河南站</span>
+									</div>
+									<div class="tab_detail">
+										<div class="detail_info">出发时间：2018-09-30 19:00:00</div>
+										<div class="detail_info">联系车主：17819185832</div>
+										<div class="detail_info">车型：轿车 | 一分钟前发布</div>
+										<div class="detail_info">担保类型：网站担保</div>
+									</dl>
+									<div class="tab_cost">
+										<div class="cost_info">费用面议</div>
+										<div class="cost_info">座位4个</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+						<ul id="pageBox_1" class="pageBox">
+							<span id="prev_1">上一页</span>
+							<ul id="pageNav_1"></ul>
+							<span id="next_1">下一页</span>
+						</ul>
+					</div>
+				</div>
+			</div>
+    	</div>
+    	<div class="side_bar">
+			<span class="hot_path ">热门路线</span>
+			<div class="more_path">
+				<div class="path">
+					<div class="detail_path">
+						<span>茂名茂南区</span>
+						<img src="images/path_arrow.png">
+						<span>信宜市天马山</span>
+					</div>
+					<ul>
+						<li>出发时间:2018-10-02 08:00:00</li>
+						<li>车型：轿车</li>
+						<li>联系车主：17819185832</li>
+						<li>座位：4个</li>
+					</ul>
+				</div>
+				<div class="path">
+					<div class="detail_path">
+						<span>茂名茂南区</span>
+						<img src="images/path_arrow.png">
+						<span>信宜市天马山</span>
+					</div>
+					<ul>
+						<li>出发时间:2018-10-02 08:00:00</li>
+						<li>车型：轿车</li>
+						<li>联系车主：17819185832</li>
+						<li>座位：4个</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

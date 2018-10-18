@@ -137,6 +137,15 @@ $(function() {
       activeClass: 'active', /*高亮显示的class*/
       ini: 0/*初始化显示的页面*/
     });
+    tabPage({
+        pageMain: '#pageMain_1',//内容
+        pageNav: '#pageNav_1',//页码
+        pagePrev: '#prev_1',//上一页
+        pageNext: '#next_1',//下一页
+        curNum: 2, /*每页显示的条数*/
+        activeClass: 'active', /*高亮显示的class*/
+        ini: 0/*初始化显示的页面*/
+      });
     function tabPage(tabPage) {
       var pageMain = $(tabPage.pageMain);/*获取内容列表*/
       var pageNav = $(tabPage.pageNav);/*获取分页*/
@@ -199,18 +208,18 @@ $(function() {
             alert('当前是第一页');
             for (var i = 0; i < curNum; i++) {
               $(pageMain).find("li").eq(i).show()
-              }
-              return false;
-            } else {
-              pageNav.find("a").removeClass(tabPage.activeClass);
-              iNum--;
-              pageNav.find("a").eq(iNum).addClass(tabPage.activeClass);
             }
-            for (var i = iNum * curNum; i < (iNum + 1) * curNum; i++) {
-              $(pageMain).find("li").eq(i).show()
-            }
-          }) 
-        }
+            return false;
+          } else {
+            pageNav.find("a").removeClass(tabPage.activeClass);
+            iNum--;
+            pageNav.find("a").eq(iNum).addClass(tabPage.activeClass);
+          }
+          for (var i = iNum * curNum; i < (iNum + 1) * curNum; i++) {
+            $(pageMain).find("li").eq(i).show()
+          }
+        }) 
+    }
 });
 
  

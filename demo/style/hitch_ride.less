@@ -1,0 +1,274 @@
+.hitch_ride{
+	width: 93.75%;
+	margin: 0 auto;
+	.top_nav{
+		font-size: 14px;
+		margin-top: 13px;
+		margin-bottom: 9px;
+		color: #666666;
+		a{
+		    color: #666666;
+		}
+	}
+	.main{
+		width: 76.5%;
+		float: left;
+		.choice{
+			width: 95.66%;
+			height: 149px;
+			border: 2px solid #dededd;
+			padding: 27px 2.17% 51px 2.17%;
+			dl{
+				margin: 0;
+				font-size: 20px;
+				color: #666;
+				dt{
+					float: left;
+					clear: both;
+				}
+			    dd{
+					float: left;
+					margin-left: 0;
+			    	a{
+			    		float: left;
+			    		margin-right: 21.5px;
+						color: #666;
+						margin-bottom: 21px;
+					}
+					input:first-child{
+                        margin-left: 0;
+					}
+					input{
+						float:left;
+						margin-left: 20px;
+					}
+			    	.input_text{
+			    		width: 109px;
+						height: 27px;
+						border: 1px solid rgba(182,180,180,1);
+						background: url(../images/place.png) no-repeat;
+						background-size: 21px 21px;
+						background-position: 96.33% 50%;
+						cursor: pointer;
+						font-family: SimHei;
+						margin-bottom: 16px;
+					}
+					.search_submit{
+						width:122px;
+                        height:32px;
+                        background:rgba(246,172,67,1);
+						border:1px solid rgba(182,180,180,1);
+						margin-left: 49px;
+						cursor: pointer;
+					}
+					.station{
+						width: 122px;
+						height: 27px;
+						border:1px solid rgba(182,180,180,1);
+						font-size:12px;
+						color:rgba(181,181,181,1);
+						font-weight: 400px;
+						font-family: SimHei;
+						padding-left: 4px;
+					}
+					.time{
+						width: 122px;
+						height: 27px;
+						border:1px solid rgba(182,180,180,1);
+						font-size:14px;
+						color:rgba(181,181,181,1);
+						font-weight: 400px;
+						font-family: SimHei;
+						padding-left: 4px;
+					}
+				}
+			}
+		}
+		.content{
+			width: 100%;
+			border: 2px solid #dededd;
+			margin-top: 28px;
+			padding-bottom: 35px;
+			position: relative;
+			.list_nav{
+				width: 100%;
+				border-bottom: 2px solid #f4a739;
+				overflow:hidden;
+				li{
+					float: left;
+					font-size: 24px;
+					font-family:Adobe Heiti Std R;
+					line-height: 64px;
+					padding-left: 51px;
+					padding-right: 51px;
+					color: #000;
+					cursor: pointer;
+				}
+				.current{
+					background-color: #f4a739;
+				}
+			}
+			.tab_box{
+				div{
+					#pageMain,#pageMain_1{
+						.list{
+							width: 100%;
+							height: 121px;
+							border-bottom: 1px solid #dededd;							
+							.tab_path{
+								cursor: pointer;
+								position: relative;
+								width: 100%;
+								padding-top: 19px;
+								padding-left: 26px;
+								.tab_way{
+									font-size: 19px;
+									font-family:SimHei;
+									font-weight:400;
+									color:rgba(177,51,179,1);
+									margin-bottom: 10px;
+									img{
+										width: 43px;
+										height: 11px;
+										padding-bottom: 4px;
+									}
+								}
+								.tab_detail{
+									width: 54%;
+                                    .detail_info{
+										width: 50%;
+										float: left;
+										font-size:16px;
+                                        font-family:SimHei;
+                                        font-weight:400;
+										color:rgba(102,102,102,1);
+										margin-bottom: 12px;
+									}
+								}
+								.tab_cost{
+									width: 124px;
+									height: 69px;
+									border: 1px solid #979696;
+									position: absolute;
+									right: 186px;
+									top: 37px;
+									.cost_info{
+										font-size:15px;
+                                        font-family:SimHei;
+										font-weight:400;
+										height: 34px;
+										text-align: center;
+										line-height: 34px;
+										color:rgba(102,102,102,1);
+										border-bottom: 1px solid #979696;
+									}
+									.cost_info:last-child{
+										border-bottom: 0;
+									}
+								}
+							}
+						}
+						.list:first-child{
+                            background: #FEF2E0;
+						}
+					}
+					.pageBox{
+						padding: 10px 0 0 0;
+						position: absolute;
+						bottom: -56px;
+						left: 286px;
+						span{
+							display: inline-block;
+							text-align: center;
+							border: 2px solid #dedede;
+							font-size: 18px;
+							padding: 10px 16px;
+						}
+						#pageNav,#pageNav_1{
+							display: inline-block;
+							border: 2px solid #dedede;
+							a{
+								display: inline-block;
+								width: 22px;
+								height: 22px;
+								text-align: center;
+								text-decoration: none;
+								font-size: 18px;
+								padding: 10px 10px;
+								color: #000;
+								border-right: 2px solid #dedede;
+							}
+							a:last-child{
+								border-right: 0;
+							}
+							a.active, #pageNav a:hover{
+								background: #f5a739;
+								color: #000;
+							}
+						}
+						#prev:hover,#prev_1:hover{
+							cursor: pointer;
+						}
+						#next:hover,#next_1:hover{
+						   cursor: pointer;
+						}
+					}
+				}
+				.hide{
+					display: none;
+				}
+			}
+		}
+	}
+	.side_bar{
+		width: 21.5%;
+		float: right;
+		height: 607px;
+		border: 2px solid #dededd;
+		.hot_path{
+			font-size:16px;
+            font-family:SimHei;
+            font-weight:400;
+			color:rgba(102,102,102,1);
+			display: block;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 13px;
+		}
+		.more_path{
+			.path:first-child{
+				background: #FEF2E0;
+			}
+			.path{
+				width: 100%;
+				height:126px;
+				border-top: 1px solid #dededd;
+				border-bottom: 1px solid #dededd;
+				cursor: pointer;
+				.detail_path{
+					font-size: 15px;
+					font-family:SimHei;
+					font-weight:400;
+					color:rgba(102,102,102,1);
+					margin-top: 13px;
+					margin-left: 12px;
+					img{
+						width: 31px;
+						height: 8px;
+						padding-bottom: 4px;
+					}
+				}
+				ul{
+					font-size:13px;
+					font-family:SimHei;
+					font-weight:400;
+					color:rgba(102,102,102,1);
+					margin-left: 13px; 
+					li{
+						margin-top: 7px;
+					}
+				}
+			}
+		}
+	}
+}
