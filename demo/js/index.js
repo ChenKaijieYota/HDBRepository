@@ -222,4 +222,23 @@ $(function() {
     }
 });
 
+//上传图片
+function F_Open_dialog(id) {
+  document.getElementById(id).click();
+}
+function imgChange(e, imageid) {
+  console.info(e.target.files[0]);//图片文件
+  console.log(e.target.value);//这个也是文件的路径和上面的dom.value是一样的
+  var div=document.getElementById('btn_img');
+  var reader = new FileReader();
+  reader.onload = (function (file) {
+      return function (e) {
+          console.info(this.result); //这个就是base64的数据了
+          div.style.display='none';
+          document.getElementById(imageid).src = this.result;   
+      };
+  })(e.target.files[0]);
+  reader.readAsDataURL(e.target.files[0]);
+}
+
  

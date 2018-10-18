@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("#headpage").load("head.html");  
+});
+</script>
+</head>
+<body>
+	<div id="headpage"></div>
+	<div class="menu">
+        <div class="center">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="">寒假工</a></li>
+                <li><a href="" style="color: #fff">工作招聘</a></li>
+                <li><a href="">兼职</a></li>
+                <li><a href="">房产租售</a></li>
+                <li><a href="">汽车租售</a></li>
+                <li><a href="">手物品交易</a></li>
+                <li><a href="">同城商家</a></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="common">
+        <div class="top_nav"><a href="">顺丰拼车</a> > <a href="">免费发布信息</a></div>
+        <div class="head">
+            <div class="current"><span>发布顺风车信息</span></div>
+            <div><span>车主信息</span></div>
+            <div><span>完成</span></div>
+        </div>
+    </div>
+    <div class="publish_main">
+        <form action="#">
+            <div class="layer">
+                <div class="title">
+                    <span>起始目的地点</span>
+                </div>
+                <div class="input">
+                    <input type="text" class="form_input">
+                    <img src="images/place.png" class="place">
+                </div>
+                <img src="images/path_arrow.png" class="path_arrow">
+                <div class="input">
+                    <input type="text" class="form_input">
+                    <img src="images/place.png" class="place">
+                </div>
+            </div>
+            <div class="layer">
+                <div class="title">
+                    <span>途径</span>
+                </div>
+                <div class="input">
+                    <input type="text" class="form_input_1">
+                </div>
+            </div>
+            <div class="layer">
+                <div class="title">
+                    <span>出发时间</span>
+                </div>
+                <div class="input">
+                    <input type="text" class="form_input">
+                    <img src="images/place.png" class="place">
+                </div>
+                <img src="images/path_arrow.png" class="path_arrow">
+                <div class="input">
+                    <input type="text" class="form_input">
+                    <img src="images/place.png" class="place">
+                </div>
+            </div>
+            <div class="layer_1">
+                <div class="title">
+                    <span>费用</span>
+                </div>
+                <div class="input">
+                    <input type="text" class="form_input"><span>元</span>
+                </div>
+            </div>
+            <div class="layer">
+                <div class="title">
+                    <span>车型</span>
+                </div>
+                <div class="input">
+                    <input type="submit" class="form_input_2" value="轿车">
+                    <input type="submit" class="form_input_2" value="小汽车">
+                    <input type="submit" class="form_input_2" value="中巴">
+                    <input type="submit" class="form_input_2" value="面包">
+                </div>
+            </div>
+            <div class="layer_2">
+                <div class="title">
+                    <span>座位人数</span>
+                </div>
+                <div class="input">
+                    <input type="submit" class="form_input" value="1">
+                    <input type="submit" class="form_input" value="2">
+                    <input type="submit" class="form_input" value="3">
+                    <input type="submit" class="form_input" value="其他">
+                    <span>人</span>
+                </div>
+            </div>
+            <div class="layer_3">
+                <div class="title">
+                    <span>拼车类型</span>
+                </div>
+                <div class="input">
+                    <input type="submit" class="form_input" value="全部">
+                    <input type="submit" class="form_input" value="跨城">
+                    <input type="submit" class="form_input" value="同城">
+                </div>
+            </div>
+            <div class="layer_4">
+                <div class="title">
+                    <span>拼车类型</span>
+                </div>
+                <div class="input">
+                    <input type="submit" class="form_input" value="网站担保">
+                    <input type="submit" class="form_input" value="自担保">
+                </div>
+            </div>
+            <div class="layer_5">
+                <div class="title">
+                    <span>图片上传</span>
+                </div>
+                <div class="input">
+                    <span id="btn_img">点击上传</span>
+                    <input type="file" id="btn_file" name="consignerRdFile" accept="image/jpg,image/jpeg,image/gif,image/png"
+                    onchange="imgChange(event,'consignerRdSign')"  class="file_input">
+                    <img id="consignerRdSign" src="/static/images/upload_img.png" class="img_input"
+                      onclick="F_Open_dialog('btn_file')" >
+                </div>
+            </div>
+            <div class="layer_6">
+                <div class="title">
+                    <span>备注说明</span>
+                </div>
+                <div class="input">
+                    <textarea class="form_input"></textarea>
+                </div>
+            </div>
+            <div class="layer_7">
+                <input type="button" class="button" value="下一步">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
